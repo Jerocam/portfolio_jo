@@ -1,8 +1,6 @@
-import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { Navbar } from "./Navbar";
 
 type ContainerProps = {
   children?: JSX.Element | JSX.Element[];
@@ -48,11 +46,11 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
       </Head>
       <main className="flex flex-row h-screen">
         <Navbar />
-        <div className="w-screen bg-gradient-to-bl from-gray-200 via-gray-400 to-gray-600 dark:from-gray-700 dark:via-gray-900 dark:to-black">
-          <section className="h-full flex justify-center items-center">
+        <section className="w-full bg-gradient-to-bl from-gray-200 via-gray-400 to-gray-600 dark:from-gray-700 dark:via-gray-900 dark:to-black">
+          <div className="flex justify-center items-center h-full p-5">
             {children}
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
     </div>
   );

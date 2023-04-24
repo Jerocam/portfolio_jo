@@ -1,7 +1,9 @@
-import { IconDeveloper, IconHome, IconContact, IconProject } from "./Icons";
-import SwitchMode from "./SwitchMode";
+import { Icons } from "./Icons";
+import {SwitchMode} from "./SwitchMode";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import JoSmLogo from "../public/jo_sm_logo.png";
 import classnames from "classnames";
 
 type NavbarProps = {
@@ -12,21 +14,6 @@ type NavbarProps = {
 const NavItem: React.FC<NavbarProps> = ({ href, icon }) => {
   const router = useRouter();
   const isActive = router.asPath === href;
-
-  const Icons = (switchIcon: string) => {
-    switch (switchIcon) {
-      case "Home":
-        return <IconHome />;
-      case "About":
-        return <IconDeveloper />;
-      case "Experience":
-        return <IconDeveloper />;
-      case "Projects":
-        return <IconProject />;
-      case "Contact":
-        return <IconContact />;
-    }
-  };
 
   return (
     <Link href={href}>
@@ -44,11 +31,19 @@ const NavItem: React.FC<NavbarProps> = ({ href, icon }) => {
   );
 };
 
-const Navbar: React.FC = () => {
+export const Navbar = () => {
   return (
     <div className="flex flex-col p-4 bg-gray-200 dark:bg-gray-950">
-      <div className="h-5/6 flex items-center">
-        <nav className="flex flex-1 flex-col space-y-8 items-center">
+      <div className="h-1/6 flex items-start">
+        <Image
+          src={JoSmLogo}
+          alt="jerocam small logo picture"
+          width={40}
+          height={40}
+        />
+      </div>
+      <div className="h-4/6 flex items-center">
+        <nav className="flex flex-col space-y-8 items-center">
           <NavItem href="/" icon="Home" />
           <NavItem href="/about" icon="About" />
           <NavItem href="/experience" icon="About" />
@@ -63,4 +58,3 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;

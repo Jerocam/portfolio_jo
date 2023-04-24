@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { ContainerBlock } from "../components/ContainerBlock";
+import {ContainerBlock} from "../components/ContainerBlock";
 import JoLogo from "../public/jo_logo.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,14 +17,12 @@ const Home: NextPage = () => {
             className="mx-auto"
           />
         </div>
-
         <div className="text-center">
           <h1 className="text-2xl">Jeronimo Jose Ocampos</h1>
           <h2 className="text-lg">
             A full-stack web developer with a passion for coding
           </h2>
         </div>
-
         <div className="flex justify-between">
           <Link
             href="https://github.com/Jerocam"

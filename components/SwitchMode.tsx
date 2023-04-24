@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IconDark, IconLight } from "./Icons";
 import { useTheme } from "next-themes";
 
-type NavbarProps = {
-  href: string;
-  icon: string;
-};
-
-const SwitchMode: React.FC = () => {
+export const SwitchMode = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<Boolean>(false);
 
@@ -36,5 +31,3 @@ const SwitchMode: React.FC = () => {
     </>
   );
 };
-
-export default SwitchMode;
