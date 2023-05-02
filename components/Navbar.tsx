@@ -1,6 +1,6 @@
 import { Icons } from "./Icons";
 import { smLogo } from "../lib/details";
-import {SwitchMode} from "./SwitchMode";
+import { SwitchMode } from "./SwitchMode";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -37,9 +37,12 @@ export const Navbar = () => {
       <div className="h-1/6 flex items-start">
         <Image
           src={smLogo}
-          alt="jerocam small logo picture"
-          width={40}
-          height={40}
+          alt="sm logo"
+          className="rounded-sm w-12 h-12"
+          placeholder="blur"
+          width={0}
+          height={0}
+          priority
         />
       </div>
       <div className="h-4/6 flex items-center">
@@ -57,4 +60,3 @@ export const Navbar = () => {
     </div>
   );
 };
-

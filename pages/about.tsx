@@ -8,18 +8,44 @@ const About: NextPage = () => {
   return (
     <ContainerBlock>
       <div>
-        <h1 className="text-2xl">About</h1>
-        <p className="text-lg mx-2 my-4">{about()}
-        {/* <Image
-          alt={name}
-          className="rounded-sm grayscale"
-          src={me}
-          placeholder="blur"
-          width={100}
-          priority
-        /> */}
-        </p>
-        <ListCards data={skills} />
+        <h1 className="text-3xl">About Me</h1>
+        <div className="flex gap-x-6">
+          <div className="w-2/5">
+            <p className="text-xl text-right">{about()}</p>
+          </div>
+          <div className="w-1/5">
+            <Image
+              alt={name}
+              className="rounded-sm"
+              src={me}
+              placeholder="blur"
+              width={0}
+              height={0}
+              priority
+            />
+          </div>
+          <div className="w-2/5">
+            <h2>My certificates</h2>
+            <div className="flex flex-col">
+              <div>
+                <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
+                  BACHELORS DEGREE IN INFORMATION TECHNOLOGY
+                </span>
+              </div>
+              <div>
+                <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
+                  BACHELORS DEGREE IN INFORMATION TECHNOLOGY
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-xl mb-2">My Technical Skills</h2>
+          <div className="bg-gray-800 ring-1 ring-gray-700 rounded-md shadow-xl p-4">
+            <ListCards data={skills} />
+          </div>
+        </div>
       </div>
     </ContainerBlock>
   );

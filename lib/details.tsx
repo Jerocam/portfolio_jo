@@ -13,12 +13,12 @@ export const me = JeroAbout;
 export const about = () => {
   return (
     <>
-      Hola, my name is Jeronimo, a full-stack web developer who has excellent
+      My name is Jeronimo, a full-stack web developer who has excellent
       knowledge of various frameworks and tools for Web Development. I have a
       passion for coding, web design and graphic design, which makes me a
       highly-motivated and fast-learner when it comes to things Technology. I
       strive to build successful websites that are well organized, easy to use
-      and fast to load. Currently, I am seeking an internship or a job that will
+      and fast to load. Currently, I am seeking a job that will
       challenge me to improve my skill sets with cutting-edge web development
       tools.
     </>
@@ -41,9 +41,8 @@ export const infoLinks = [
 export const skills = [
   {
     id: "FE",
-    ringColor: "ring-red-500",
-    textColor: "text-red-500",
-    bgColor: "bg-red-900/40",
+    title:"Front End",
+    color: "red",
     skillDetails: [
       {
         title: "HTML5",
@@ -51,23 +50,22 @@ export const skills = [
       },
       {
         title: "CSS3",
-        percentage: 70,
+        percentage: 75,
       },
       {
-        title: "CSS3",
-        percentage: 70,
+        title: "JavaScript",
+        percentage: 60,
       },
       {
-        title: "CSS3",
-        percentage: 70,
+        title: "Tailwind CSS",
+        percentage: 80,
       },
     ],
   },
   {
     id: "BE",
-    ringColor: "ring-green-500",
-    textColor: "text-green-500",
-    bgColor: "bg-green-900/40",
+    title:"Back End",
+    color: "blue",
     skillDetails: [
       {
         title: "PHP",
@@ -75,6 +73,52 @@ export const skills = [
       },
       {
         title: "SQL",
+        percentage: 30,
+      },
+    ],
+  },
+  {
+    id: "BE2",
+    title:"Back End2",
+    color: "green",
+    skillDetails: [
+      {
+        title: "PHP",
+        percentage: 25,
+      },
+      {
+        title: "SQL",
+        percentage: 30,
+      },
+      {
+        title: "SQL2",
+        percentage: 30,
+      },
+      {
+        title: "SQL3",
+        percentage: 30,
+      },
+    ],
+  },
+  {
+    id: "BE3",
+    title:"Back End3",
+    color: "green",
+    skillDetails: [
+      {
+        title: "PHP",
+        percentage: 25,
+      },
+      {
+        title: "SQL",
+        percentage: 30,
+      },
+      {
+        title: "SQL2",
+        percentage: 30,
+      },
+      {
+        title: "SQL3",
         percentage: 30,
       },
     ],
