@@ -8,25 +8,29 @@ type ListCardProps = {
 
 export const ListCards: React.FC<ListCardProps> = ({ data }) => {
   return (
-    <div className="columns-2">
+    <div className="grid grid-cols-2 gap-4 mx-2 my-4">
       {data.map((item: any) => (
         <div
           key={item.id}
           className={classNames(
             `${item.ringColor}`,
-            "ring-2 rounded-2xl p-4 xl:p-6"
+            "ring-2 rounded-md p-2 grid grid-cols-1 space-y-2"
           )}
         >
           {item.skillDetails.map((detail: any) => (
             <div
               key={detail.title}
-              className="flex items-center justify-between gap-x-4"
+              className={classNames(
+                `${item.textColor}`,
+                `${item.bgColor}`,
+                "flex flex-row justify-evenly items-center p-2 rounded-md"
+              )}
             >
-              <h2 className={classNames(`${item.textColor}`, "text-xl")}>
-                {detail.title}
+              <div className="inline-flex items-center">
                 {Icons(detail.title)}
-              </h2>
-              <ProgressBar percentage={detail.percentage} color={item.textColor}/>
+                <h2 className="text-xl">{detail.title}</h2>
+              </div>
+              <ProgressBar percentage={detail.percentage} />
             </div>
           ))}
         </div>

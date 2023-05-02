@@ -1,9 +1,9 @@
 import { Icons } from "./Icons";
+import { smLogo } from "../lib/details";
 import {SwitchMode} from "./SwitchMode";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import JoSmLogo from "../public/jo_sm_logo.png";
 import classnames from "classnames";
 
 type NavbarProps = {
@@ -36,7 +36,7 @@ export const Navbar = () => {
     <div className="flex flex-col p-4 bg-gray-200 dark:bg-gray-950">
       <div className="h-1/6 flex items-start">
         <Image
-          src={JoSmLogo}
+          src={smLogo}
           alt="jerocam small logo picture"
           width={40}
           height={40}
