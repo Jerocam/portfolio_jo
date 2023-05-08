@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import { name, about, me, skills } from "../lib/details";
+import { Icons } from "../components/Icons";
+import { name, about, me, skills, certificates } from "../lib/details";
 import { ContainerBlock } from "../components/ContainerBlock";
 import { ListCards } from "../components/ListCards";
 import Image from "next/image";
@@ -27,16 +28,13 @@ const About: NextPage = () => {
           <div className="w-2/5">
             <h2>My certificates</h2>
             <div className="flex flex-col">
-              <div>
-                <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
-                  BACHELORS DEGREE IN INFORMATION TECHNOLOGY
-                </span>
-              </div>
-              <div>
-                <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
-                  BACHELORS DEGREE IN INFORMATION TECHNOLOGY
-                </span>
-              </div>
+              {certificates.map((item: any) => (
+                <div key={item.id}>
+                  <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
+                    {Icons("Taskdone")} {item.certificate}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

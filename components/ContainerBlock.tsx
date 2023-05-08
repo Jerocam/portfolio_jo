@@ -44,12 +44,10 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
-      <main className="flex flex-row h-screen">
+      <main className="flex flex-row min-h-screen">
         <Navbar />
-        <section className="w-full bg-gradient-to-bl from-gray-200 via-gray-400 to-gray-600 dark:from-gray-700 dark:via-gray-900 dark:to-black">
-          <div className="flex justify-center items-center h-full p-5">
-            {children}
-          </div>
+        <section className="w-full bg-gradient-to-bl from-gray-200 via-gray-400 to-gray-600 dark:from-gray-700 dark:via-gray-900 dark:to-black p-5">
+          {children}
         </section>
       </main>
     </div>

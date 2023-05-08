@@ -4,8 +4,8 @@ export function IconHome(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       viewBox="0 0 24 24"
       {...props}
     >
@@ -25,8 +25,8 @@ export function IconDeveloper(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       viewBox="0 0 24 24"
       {...props}
     >
@@ -44,12 +44,29 @@ export function IconDeveloper(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconExperience(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-5-5c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm-4 4h8v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1z"
+      ></path>
+    </svg>
+  );
+}
+
 export function IconContact(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       viewBox="0 0 24 24"
       {...props}
     >
@@ -70,8 +87,8 @@ export function IconProject(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       viewBox="0 0 24 24"
       {...props}
     >
@@ -96,8 +113,8 @@ export function IconLight(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       viewBox="0 0 24 24"
       className="text-yellow-500"
       {...props}
@@ -118,8 +135,8 @@ export function IconDark(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.2em"
-      height="1.2em"
+      width="1em"
+      height="1em"
       className="text-black"
       viewBox="0 0 24 24"
       {...props}
@@ -153,7 +170,7 @@ export function IconHtml5(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function GithubBox(props: SVGProps<SVGSVGElement>) {
+export function IconGithubBox(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +187,7 @@ export function GithubBox(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function Linkedin(props: SVGProps<SVGSVGElement>) {
+export function IconLinkedin(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -187,23 +204,36 @@ export function Linkedin(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export const Icons = (switchIcon: string) => {
-  switch (switchIcon) {
-    case "Home":
-      return <IconHome />;
-    case "About":
-      return <IconDeveloper />;
-    case "Experience":
-      return <IconDeveloper />;
-    case "Projects":
-      return <IconProject />;
-    case "Contact":
-      return <IconContact />;
-    case "HTML5":
-      return <IconHtml5 />;
-    case "GitHub":
-      return <GithubBox />;
-    case "Linkedln":
-      return <Linkedin />;
-  }
-};
+export function IconTaskDone(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q1.625 0 3.075.475T17.75 3.8L16.3 5.275q-.95-.6-2.025-.938T12 4Q8.675 4 6.337 6.337T4 12q0 3.325 2.337 5.663T12 20q3.325 0 5.663-2.337T20 12q0-.45-.05-.9t-.15-.875L21.425 8.6q.275.8.425 1.65T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1.4-5.4l-4.25-4.25l1.4-1.4l2.85 2.85l10-10.025l1.4 1.4L10.6 16.6Z"
+      ></path>
+    </svg>
+  );
+}
+
+export function IconDegree(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6l9-4.91V17h2V9L12 3z"
+      ></path>
+    </svg>
+  );
+}

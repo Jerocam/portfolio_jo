@@ -1,3 +1,4 @@
+import { IconHome, IconDeveloper, IconProject, IconExperience, IconContact, IconDegree } from "../components/Icons";
 import JoLogo from "../public/jo_logo.png";
 import JoSmLogo from "../public/jo_sm_logo.png";
 import JeroAbout from "../public/jo_about.png";
@@ -9,6 +10,39 @@ export const title = "Front End Web Developer";
 export const logo = JoLogo;
 export const smLogo = JoSmLogo;
 export const me = JeroAbout;
+
+export const navbars = [
+  {
+    id: 1,
+    title:'Home',
+    href: '/',
+    icon: IconHome
+  },
+  {
+    id: 2,
+    title:'About',
+    href: '/about',
+    icon: IconDeveloper
+  },
+  {
+    id: 3,
+    title:'Experience',
+    href: '/experience',
+    icon: IconExperience
+  },
+  {
+    id: 4,
+    title:'Projects',
+    href: '/projects',
+    icon: IconProject
+  },
+  {
+    id: 5,
+    title:'Contact',
+    href: '/contact',
+    icon: IconContact
+  }
+]
 
 export const about = () => {
   return (
@@ -37,6 +71,29 @@ export const infoLinks = [
     href: "https://www.linkedin.com/in/jerocam-226",
   },
 ];
+
+export const certificates = [
+  {
+    id:1,
+    certificate:"Bachelor's degree in Information Technology",
+    place:"Gallaudet University"
+  },
+  {
+    id:2,
+    certificate:"Front End Web Developer I",
+    place:"San Diego College"
+  },
+  {
+    id:3,
+    certificate:"Front End Web Developer II",
+    place:"San Diego College"
+  },
+  {
+    id:4,
+    certificate:"Python programming I",
+    place:"San Diego College"
+  }
+]
 
 export const skills = [
   {
@@ -122,5 +179,24 @@ export const skills = [
         percentage: 30,
       },
     ],
+  },
+];
+
+export const timeline = [
+  {
+    id: 1,
+    content: "Applied to",
+    target: "Front End Developer",
+    href: "#",
+    year: "2017",
+    icon: IconDegree,
+  },
+  {
+    id: 2,
+    content: "Applied to",
+    target: "Front End Developer",
+    href: "#",
+    year: "2016",
+    icon: IconDegree,
   },
 ];
