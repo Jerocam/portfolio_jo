@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { ProgressBar } from "./ProgressBar";
-import { Icons } from "./Icons";
 
 type ListCardProps = {
   data: any;
@@ -37,7 +36,7 @@ export const ListCards: React.FC<ListCardProps> = ({ data }) => {
                 )}
               >
                 <div className="inline-flex items-center">
-                  {Icons(detail.title)}
+                  
                   <h2 className="text-xl">{detail.title}</h2>
                 </div>
                 <ProgressBar percentage={detail.percentage} />

@@ -53,7 +53,7 @@ const Contact: NextPage = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  {/* <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" /> */}
                 </dt>
                 <dd>
                   545 Mavis Island
@@ -64,7 +64,7 @@ const Contact: NextPage = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
-                  <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  {/* <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" /> */}
                 </dt>
                 <dd>
                   <a className="hover:text-white" href="tel:+1 (555) 234-5678">
@@ -75,7 +75,7 @@ const Contact: NextPage = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
-                  <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  {/* <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" /> */}
                 </dt>
                 <dd>
                   <a className="hover:text-white" href="mailto:hello@example.com">

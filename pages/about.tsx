@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { Icons } from "../components/Icons";
 import { name, about, me, skills, certificates } from "../lib/details";
 import { ContainerBlock } from "../components/ContainerBlock";
 import { ListCards } from "../components/ListCards";
@@ -31,7 +30,7 @@ const About: NextPage = () => {
               {certificates.map((item: any) => (
                 <div key={item.id}>
                   <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
-                    {Icons("Taskdone")} {item.certificate}
+                    {item.certificate}
                   </span>
                 </div>
               ))}

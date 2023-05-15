@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { Icons } from "../components/Icons";
 import { logo, name, title, infoLinks } from "../lib/details";
 import { ContainerBlock } from "../components/ContainerBlock";
 import Image from "next/image";
@@ -32,7 +31,7 @@ const Home: NextPage = () => {
                 className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
               >
                 <div className="flex items-center">
-                  {Icons(item.name)}
+                  
                   <div className="ml-3">{item.name}</div>
                 </div>
               </a>

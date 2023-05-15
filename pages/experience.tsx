@@ -6,9 +6,9 @@ const Experience: NextPage = () => {
   return (
     <ContainerBlock>
       <div>
-        <h1 className="text-2xl mb-10">Experience</h1>
-        <div className="ml-10">
-          <div className="flow-root max-w-5xl">
+        <h1 className="text-2xl my-10">Experience</h1>
+        <div className="mx-auto max-w-7xl">
+          <div className="flow-root">
             <ul role="list" className="-mb-8">
               {timeline.map((event, eventIdx) => (
                 <li key={event.id}>

@@ -200,3 +200,52 @@ export const timeline = [
     icon: IconDegree,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    tabname: "Full Stack",
+    tabpanel: [
+      {
+        name: "Project 1",
+        description:"fsdfds fdsfdsfdff"
+      },
+      {
+        name: "Project 2",
+        description:"fsdfds fdsfdsfdff"
+      },
+      {
+        name: "Project 3",
+        description:"fsdfds fdsfdsfdff"
+      },
+    ],
+  },
+  {
+    id: 2,
+    tabname: "Front End",
+    tabpanel: [
+      {
+        name: "Project11",
+        description:"fsdfds fdsfdsfdff"
+      },
+      {
+        name: "Project22",
+        description:"fsdfds fdsfdsfdff"
+      },
+    ],
+  },
+  {
+    id: 3,
+    tabname: "Back End",
+    tabpanel: [
+      {
+        name: "Project11",
+        description:"fsdfds fdsfdsfdff"
+      },
+      {
+        name: "Project22",
+        description:"fsdfds fdsfdsfdff"
+      },
+    ],
+  },
+];
