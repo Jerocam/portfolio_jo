@@ -1,46 +1,27 @@
 import type { NextPage } from "next";
-import { logo, name, title, infoLinks } from "../lib/details";
+import { name, about, me, certificates, infoLinks } from "../lib/details";
 import { ContainerBlock } from "../components/ContainerBlock";
-import Image from "next/image";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <ContainerBlock>
-      <div className="flex justify-center items-center h-full">
-        <div className="space-y-8">
-          <div>
-            <Image
-              src={logo}
-              alt={name}
-              width={120}
-              height={120}
-              className="mx-auto"
-            />
+      <p className="text-lg">{about()}</p>
+      <div className="mt-4">
+        <h3>Certifications</h3>
+        {certificates.map((item: any) => (
+          <div key={item.id}>
+            <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs font-medium text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
+              {item.certificate}
+            </span>
           </div>
-          <div className="text-center">
-            <h1 className="text-2xl">{name}</h1>
-            <h2 className="text-lg">{title}</h2>
-          </div>
-          <div className="flex flex-row gap-2">
-            {infoLinks.map((item) => (
-              <a
-                key={item.id}
-                href={item.href}
-                target="_blank"
-                rel="noreferrer"
-                className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-              >
-                <div className="flex items-center">
-                  
-                  <div className="ml-3">{item.name}</div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+        ))}
+      </div>
+      <div>
+        <h3>Technical Skills</h3>
+        <div>react etc</div>
       </div>
     </ContainerBlock>
   );
 };
 
-export default Home;
+export default About;

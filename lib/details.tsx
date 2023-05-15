@@ -1,4 +1,4 @@
-import { IconHome, IconDeveloper, IconProject, IconExperience, IconContact, IconDegree } from "../components/Icons";
+import { IconDeveloper, IconProject, IconExperience, IconDegree, IconGithubBox, IconLinkedin } from "../components/Icons";
 import JoLogo from "../public/jo_logo.png";
 import JoSmLogo from "../public/jo_sm_logo.png";
 import JeroAbout from "../public/jo_about.png";
@@ -14,40 +14,28 @@ export const me = JeroAbout;
 export const navbars = [
   {
     id: 1,
-    title:'Home',
-    href: '/',
-    icon: IconHome
-  },
-  {
-    id: 2,
     title:'About',
-    href: '/about',
+    href: '/',
     icon: IconDeveloper
   },
   {
-    id: 3,
+    id: 2,
     title:'Experience',
     href: '/experience',
     icon: IconExperience
   },
   {
-    id: 4,
+    id: 3,
     title:'Projects',
     href: '/projects',
     icon: IconProject
-  },
-  {
-    id: 5,
-    title:'Contact',
-    href: '/contact',
-    icon: IconContact
   }
 ]
 
 export const about = () => {
   return (
     <>
-      My name is Jeronimo, a full-stack web developer who has excellent
+      I have been developing websites since 2018. A web developer who has excellent
       knowledge of various frameworks and tools for Web Development. I have a
       passion for coding, web design and graphic design, which makes me a
       highly-motivated and fast-learner when it comes to things Technology. I
@@ -64,11 +52,13 @@ export const infoLinks = [
     id: 1,
     name: "GitHub",
     href: "https://github.com/Jerocam",
+    icon: IconGithubBox
   },
   {
     id: 2,
     name: "Linkedln",
     href: "https://www.linkedin.com/in/jerocam-226",
+    icon: IconLinkedin
   },
 ];
 
@@ -95,93 +85,6 @@ export const certificates = [
   }
 ]
 
-export const skills = [
-  {
-    id: "FE",
-    title:"Front End",
-    color: "red",
-    skillDetails: [
-      {
-        title: "HTML5",
-        percentage: 85,
-      },
-      {
-        title: "CSS3",
-        percentage: 75,
-      },
-      {
-        title: "JavaScript",
-        percentage: 60,
-      },
-      {
-        title: "Tailwind CSS",
-        percentage: 80,
-      },
-    ],
-  },
-  {
-    id: "BE",
-    title:"Back End",
-    color: "blue",
-    skillDetails: [
-      {
-        title: "PHP",
-        percentage: 25,
-      },
-      {
-        title: "SQL",
-        percentage: 30,
-      },
-    ],
-  },
-  {
-    id: "BE2",
-    title:"Back End2",
-    color: "green",
-    skillDetails: [
-      {
-        title: "PHP",
-        percentage: 25,
-      },
-      {
-        title: "SQL",
-        percentage: 30,
-      },
-      {
-        title: "SQL2",
-        percentage: 30,
-      },
-      {
-        title: "SQL3",
-        percentage: 30,
-      },
-    ],
-  },
-  {
-    id: "BE3",
-    title:"Back End3",
-    color: "green",
-    skillDetails: [
-      {
-        title: "PHP",
-        percentage: 25,
-      },
-      {
-        title: "SQL",
-        percentage: 30,
-      },
-      {
-        title: "SQL2",
-        percentage: 30,
-      },
-      {
-        title: "SQL3",
-        percentage: 30,
-      },
-    ],
-  },
-];
-
 export const timeline = [
   {
     id: 1,
@@ -198,54 +101,5 @@ export const timeline = [
     href: "#",
     year: "2016",
     icon: IconDegree,
-  },
-];
-
-export const projects = [
-  {
-    id: 1,
-    tabname: "Full Stack",
-    tabpanel: [
-      {
-        name: "Project 1",
-        description:"fsdfds fdsfdsfdff"
-      },
-      {
-        name: "Project 2",
-        description:"fsdfds fdsfdsfdff"
-      },
-      {
-        name: "Project 3",
-        description:"fsdfds fdsfdsfdff"
-      },
-    ],
-  },
-  {
-    id: 2,
-    tabname: "Front End",
-    tabpanel: [
-      {
-        name: "Project11",
-        description:"fsdfds fdsfdsfdff"
-      },
-      {
-        name: "Project22",
-        description:"fsdfds fdsfdsfdff"
-      },
-    ],
-  },
-  {
-    id: 3,
-    tabname: "Back End",
-    tabpanel: [
-      {
-        name: "Project11",
-        description:"fsdfds fdsfdsfdff"
-      },
-      {
-        name: "Project22",
-        description:"fsdfds fdsfdsfdff"
-      },
-    ],
   },
 ];

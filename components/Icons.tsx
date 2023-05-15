@@ -1,26 +1,5 @@
 import { SVGProps } from "react";
 
-export function IconHome(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      {...props}
-    >
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-        d="M22 12h-8m0 0l3.5-3.5M14 12l3.5 3.5M2 12h8m0 0L6.5 8.5M10 12l-3.5 3.5M10 21V3m4 18V3"
-      ></path>
-    </svg>
-  );
-}
-
 export function IconDeveloper(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -57,28 +36,6 @@ export function IconExperience(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
         d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l2 2H20v10zm-5-5c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2zm-4 4h8v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1z"
       ></path>
-    </svg>
-  );
-}
-
-export function IconContact(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 24 24"
-      {...props}
-    >
-      <g
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth="1.5"
-      >
-        <path strokeLinejoin="round" d="m9 9l4.5 3L18 9M3 13.5h2m-4-3h4"></path>
-        <path d="M5 7.5V7a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-.5"></path>
-      </g>
     </svg>
   );
 }
@@ -174,8 +131,8 @@ export function IconGithubBox(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="3em"
-      height="3em"
+      width="2em"
+      height="2em"
       viewBox="0 0 24 24"
       {...props}
     >
@@ -191,8 +148,8 @@ export function IconLinkedin(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="3em"
-      height="3em"
+      width="2em"
+      height="2em"
       viewBox="0 0 24 24"
       {...props}
     >
