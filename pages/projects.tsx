@@ -1,14 +1,12 @@
-import classNames from "classnames";
-import { ContainerBlock } from "../components/ContainerBlock";
 import type { NextPage } from "next";
+import { ContainerBlock } from "../components/ContainerBlock";
+import { GridCards } from "../components/GridCards";
+import { projects } from "../lib/details";
 
 const Projects: NextPage = () => {
   return (
     <ContainerBlock>
-      <div>
-        <h1 className="text-3xl">Projects</h1>
-
-      </div>
+      <GridCards data={projects} />
     </ContainerBlock>
   );
 };

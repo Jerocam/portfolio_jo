@@ -1,9 +1,10 @@
-import { smLogo, navbars } from "../lib/details";
-import { SwitchMode } from "./SwitchMode";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 import classnames from "classnames";
+import { SwitchMode } from "./SwitchMode";
+
+import { logo, navbars } from "../lib/details";
 
 type NavbarProps = {
   navdata: any;
@@ -30,14 +31,23 @@ const NavItem: React.FC<NavbarProps> = ({ navdata }) => {
   );
 };
 
-export const Navbar = () => {
+export const Header = () => {
   return (
-    <nav className="flex flex-row justify-center space-x-4 bg-black">
-      {navbars &&
-        navbars.map((navitem) => (
-          <NavItem key={navitem.id} navdata={navitem} />
-        ))}
-        <SwitchMode/>
-    </nav>
+    <header className="bg-black sticky top-0 inset-x-0">
+      <nav className="mx-auto flex items-center justify-between p-4 lg:px-8">
+        <div className="flex">
+          <Image src={logo} alt="logo jerocam" width={30} height={30} />
+        </div>
+        <div className="flex gap-x-12">
+          {navbars &&
+            navbars.map((navitem) => (
+              <NavItem key={navitem.id} navdata={navitem} />
+            ))}
+        </div>
+        <div className="flex justify-end">
+          <SwitchMode />
+        </div>
+      </nav>
+    </header>
   );
 };

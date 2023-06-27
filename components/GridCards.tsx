@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import Image from "next/image";
+import { IconCode, IconWeb } from "./Icons";
 
 type GridCardProps = {
   data: any;
@@ -7,27 +7,62 @@ type GridCardProps = {
 
 export const GridCards: React.FC<GridCardProps> = ({ data }) => {
   return (
-    <div className="bg-gradient-to-tr from-purple-800 via-violet-900 to-purple-800 rounded-lg shadow-lg">
-      <div className="p-3">
-        <div className="">
-          <h2 className="text-lg font-bold tracking-tight text-white sm:text-xl">
-            {data.name}
-          </h2>
-          <p className="mt-1 text-base leading-8 text-gray-300">
-            {data.description}
-          </p>
-        </div>
-        <div className="flex justify-between mt-4">
-          <div>
-            <button className="mr-2 rounded-xl bg-white/5 py-1 px-4 ring-1 ring-inset ring-white/10 hover:bg-gray-200 hover:text-black transition-all duration-150">
-              View Website
-            </button>
-            <button className="rounded-xl bg-white/5 py-1 px-4 ring-1 ring-inset ring-white/10 hover:bg-gray-200 hover:text-black transition-all duration-150">
-              View Source
-            </button>
-          </div>
-        </div>
-      </div>
+    <div>
+      <ul
+        role="list"
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {data.map((item: any) => (
+          <li
+            key={item.id}
+            className="relative h-48 col-span-1 divide-y divide-gray-400 rounded bg-gray-700 shadow-lg"
+          >
+            <div className="static flex justify-between w-full p-5">
+              <div className="flex-1 truncate">
+                <h3 className="truncate text-sm font-medium text-gray-200">
+                  {item.title}
+                </h3>
+                <p className="mt-1 truncate text-sm text-gray-300">
+                  {item.description}
+                </p>
+                <div className="flex items-center gap-1 mt-2 flex-wrap">
+                  {item.tech.map((techItem: any, index: number) => (
+                    <span
+                      key={index}
+                      className="inline-flex items-center rounded-xl bg-green-400/10 px-2 py-1 text-xs font-medium text-green-500 ring-1 ring-inset ring-green-400/20"
+                    >
+                      {techItem}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <Image className="h-16 w-auto rounded" src={item.image} alt="" />
+            </div>
+            <div className="absolute inset-x-0 bottom-0">
+              <div className="-mt-px flex divide-x divide-gray-400">
+                <div className="flex w-0 flex-1">
+                  <a
+                    href=""
+                    className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl border border-transparent py-3 text-sm font-semibold text-gray-200 hover:bg-gray-900 transition ease-in-out delay-100"
+                  >
+                    <IconCode className="text-xl" />
+                    Source Code
+                  </a>
+                </div>
+                <div className="-ml-px flex w-0 flex-1">
+                  <a
+                    href=""
+                    className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br border border-transparent py-3 text-sm font-semibold text-gray-200 hover:bg-gray-900 transition ease-in-out delay-100"
+                  >
+                    <IconWeb className="text-xl" />
+                    Website
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
