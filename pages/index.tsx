@@ -21,7 +21,7 @@ const About: NextPage = () => {
       </div>
       <div className="mt-8">
         <h2 className="text-xl">Technical Skills</h2>
-        <div className="space-x-2 flex mt-3 pl-2">
+        <div className="flex flex-wrap gap-2 mt-3 pl-2">
           {skills.map((item: any, index: number) => (
             <div key={index}>
               <span className="inline-flex items-center rounded-xl bg-green-400/10 px-2 py-1 text-sm font-medium text-green-500 ring-1 ring-inset ring-green-400/20">

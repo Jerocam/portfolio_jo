@@ -37,14 +37,14 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
         />
       </Head>
       <Header />
-      <main className="container mx-auto pt-16 flex static">
+      <main className="container mx-auto pt-8 flex static">
         <aside className="w-2/6">
           <div>
             <h1 className="text-4xl font-medium">{name}</h1>
             <h2 className="text-xl">{title}</h2>
           </div>
           <div>
-            <dl className="mt-10 space-y-4 text-sm leading-7 text-gray-300">
+            <dl className="mt-10 space-y-4 text-sm leading-5 text-gray-300">
               <div className="flex gap-x-2">
                 <dt className="flex items-center">
                   <span className="sr-only">Location</span>
@@ -74,7 +74,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
                 <a
                   key={infoitem.id}
                   href={infoitem.href}
-                  className="inline-flex rounded bg-white/10 px-3 py-1 text-white shadow-sm hover:bg-white/20 transition ease-in-out delay-150"
+                  className="inline-flex rounded bg-white/10 px-3 py-1.5 text-white shadow-sm hover:bg-white/20 transition ease-in-out delay-150"
                 >
                   <infoitem.icon className="text-2xl mr-2" />
                   {infoitem.name}
@@ -84,8 +84,8 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
         </aside>
         <section className="w-4/6">{children}</section>
       </main>
-      <footer className="h-16 absolute bottom-0 inset-x-0">
-        <p className="text-center">example footer</p>
+      <footer className="h-10 absolute bottom-0 inset-x-0">
+        <p className="text-center text-xs">Developed with Next.js and Tailwind CSS. All right reserved 2023</p>
       </footer>
     </div>
   );

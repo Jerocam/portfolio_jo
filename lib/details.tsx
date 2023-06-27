@@ -109,6 +109,9 @@ export const skills = [
   "MongoDB",
   "Contentful",
   "HubSpot",
+  "React Bricks",
+  "Plasmic",
+  "Next.js"
 ];
 
 export const timeline = [
