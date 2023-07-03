@@ -9,6 +9,7 @@ import {
 import JoLogo from "../public/jo_logo.png";
 import JoSmLogo from "../public/jo_sm_logo.png";
 import JeroAbout from "../public/jo_about.png";
+import SBG from "../public/sbg.png";
 
 export const name = "Jeronimo Jose Ocampos";
 export const title = "Web Developer";
@@ -139,6 +140,7 @@ export const projects = [
     title: "MERN App",
     description: "example description",
     link: "",
+    scode:"",
     image: me,
     tech: ["React", "Prisma", "Tailwind CSS", "Sass"],
   },
@@ -147,6 +149,7 @@ export const projects = [
     title: "Calculator App",
     description: "example description",
     link: "",
+    scode:"",
     image: me,
     tech: ["React", "PHP"],
   },
@@ -155,15 +158,17 @@ export const projects = [
     title: "Calculator App",
     description: "example description",
     link: "",
+    scode:"",
     image: me,
     tech: ["React", "PHP"],
   },
   {
     id: 4,
-    title: "Calculator App",
-    description: "example description",
-    link: "",
-    image: me,
-    tech: ["React", "PHP"],
+    title: "SBG Website",
+    description: "Student Board Goverment of Gallaudet University",
+    link: "https://romantic-blackwell-0723fa.netlify.app/",
+    scode:"https://github.com/Jerocam/sbg-website/tree/master",
+    image: SBG,
+    tech: ["HTML5", "CSS3", "Saas", "jQuery"],
   },
 ];
