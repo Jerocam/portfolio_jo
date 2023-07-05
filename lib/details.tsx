@@ -10,6 +10,9 @@ import JoLogo from "../public/jo_logo.png";
 import JoSmLogo from "../public/jo_sm_logo.png";
 import JeroAbout from "../public/jo_about.png";
 import SBG from "../public/sbg.png";
+import JoShop from "../public/jo_shop.png";
+import JoProjects from "../public/jerocam_projects.png";
+import JoPizza from "../public/jo_pizza.png";
 
 export const name = "Jeronimo Jose Ocampos";
 export const title = "Web Developer";
@@ -105,14 +108,16 @@ export const skills = [
   "Sveltekit",
   "Prisma",
   "CSS3",
+  "Sass",
   "HTML5",
-  "PHP",
   "MongoDB",
   "Contentful",
   "HubSpot",
   "React Bricks",
   "Plasmic",
-  "Next.js"
+  "Next.js",
+  "Bootstrap",
+  "Tailwind CSS",
 ];
 
 export const timeline = [
@@ -137,37 +142,43 @@ export const timeline = [
 export const projects = [
   {
     id: 1,
-    title: "MERN App",
-    description: "example description",
-    link: "",
-    scode:"",
-    image: me,
-    tech: ["React", "Prisma", "Tailwind CSS", "Sass"],
+    title: "Jerocam Pizza",
+    description: "Final project of my school in 2020",
+    link: "https://jerocam.github.io/pizza-jerocam/",
+    scode: "https://github.com/Jerocam/pizza-jerocam",
+    image: JoPizza,
+    tech: ["HTML5", "CSS3", "JavaScript"],
   },
   {
     id: 2,
-    title: "Calculator App",
-    description: "example description",
-    link: "",
-    scode:"",
-    image: me,
-    tech: ["React", "PHP"],
+    title: "Jerocam React Web App",
+    description: "Multiple Restful API proyects",
+    link: "https://jerocam.github.io/jerocamReact/",
+    scode: "https://github.com/Jerocam/jerocamReact",
+    image: JoProjects,
+    tech: [
+      "React",
+      "Bootstrap",
+      "Tailwind CSS",
+      "RapidAPI",
+      "JavaScript"
+    ],
   },
   {
     id: 3,
-    title: "Calculator App",
-    description: "example description",
-    link: "",
-    scode:"",
-    image: me,
-    tech: ["React", "PHP"],
+    title: "First E-Commerce website",
+    description: "Jerocam Shop",
+    link: "https://snipcart2master.gatsbyjs.io/",
+    scode: "https://github.com/Jerocam/snipcart2/tree/master",
+    image: JoShop,
+    tech: ["Gatsby", "Snipcart", "CSS", "JavaScript"],
   },
   {
     id: 4,
     title: "SBG Website",
     description: "Student Board Goverment of Gallaudet University",
     link: "https://romantic-blackwell-0723fa.netlify.app/",
-    scode:"https://github.com/Jerocam/sbg-website/tree/master",
+    scode: "https://github.com/Jerocam/sbg-website/tree/master",
     image: SBG,
     tech: ["HTML5", "CSS3", "Saas", "jQuery"],
   },
