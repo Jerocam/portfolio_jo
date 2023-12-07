@@ -41,7 +41,7 @@ export const Header = () => {
             <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  <Image src={logo} alt="logo jerocam" width={30} height={30} />
+                  <Image src={logo} alt="logo jerocam" width="0" height="0" className="w-8 h-auto" />
                 </div>
                 <div className="hidden sm:flex items-center gap-x-6 lg:gap-x-12">
                   {navbars &&

@@ -7,7 +7,7 @@ type GridCardProps = {
 
 export const GridCards: React.FC<GridCardProps> = ({ data }) => {
   return (
-    <div className="overflow-y-auto max-h-[42rem]">
+    <div className="overflow-y-auto max-h-[42rem] mb-2 sm:mb-0">
       <ul
         role="list"
         className="grid grid-cols-1 gap-4 lg:gap-5 md:grid-cols-2 xl:grid-cols-3"
@@ -15,7 +15,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
         {data.map((item: any) => (
           <li
             key={item.id}
-            className="relative h-52 col-span-1 rounded bg-neutral-300 dark:bg-neutral-700 shadow-lg p-2"
+            className="relative h-56 sm:h-52 col-span-1 rounded bg-neutral-300 dark:bg-neutral-700 shadow-lg p-2"
           >
             <div className="static flex w-full">
               <Image

@@ -20,7 +20,7 @@ const Experience: NextPage = () => {
               <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-[10px] lg:text-xs font-semibold uppercase w-36 h-6 mb-3 sm:mb-0 text-violet-100 bg-violet-800 rounded-full">
                 {item.year}
               </time>
-              <div className="text-xs md:text-sm lg:text-base text-neutral-700 dark:text-neutral-400">
+              <div className="text-sm lg:text-base text-neutral-700 dark:text-neutral-400">
                 {item.place}
               </div>
             </div>
