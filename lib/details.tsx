@@ -6,8 +6,6 @@ import {
   IconLinkedin,
 } from "../components/Icons";
 import JoLogo from "../public/jo_logo.png";
-import JoSmLogo from "../public/jo_sm_logo.png";
-import JeroAbout from "../public/jo_about.png";
 import SBG from "../public/sbg.png";
 import JoShop from "../public/jo_shop.png";
 import JoProjects from "../public/jerocam_projects.png";
@@ -20,8 +18,6 @@ export const subtitle = "I have been developing websites since 2018.";
 
 // images
 export const logo = JoLogo;
-export const smLogo = JoSmLogo;
-export const me = JeroAbout;
 
 export const navbars = [
   {
