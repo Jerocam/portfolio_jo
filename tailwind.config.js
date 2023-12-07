@@ -9,5 +9,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui"), require("@headlessui/tailwindcss")],
+  plugins: [require("@headlessui/tailwindcss")],
 };
