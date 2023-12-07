@@ -8,9 +8,9 @@ const Projects: NextPage = () => {
   return (
     <ContainerBlock>
       <GridCards data={projects} />
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center">
         <a
-          className="flex items-center space-x-1 text-gray-200 text-base transition-all ease-in-out hover:text-lg duration-300"
+          className="flex items-center space-x-1 text-neutral-900 dark:text-neutral-200 text-sm lg:text-base transition-all hover:text-sky-600 dark:hover:text-sky-400"
           target="_blank"
           href="https://github.com/Jerocam?tab=repositories"
         >
