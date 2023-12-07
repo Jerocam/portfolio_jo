@@ -11,6 +11,9 @@ import JoShop from "../public/jo_shop.png";
 import JoProjects from "../public/jerocam_projects.png";
 import JoPizza from "../public/jo_pizza.png";
 import ETI from "../public/eti.png";
+import OldPtf from "../public/oldptf.png";
+import Vctl from "../public/vctl.png";
+import Syl from "../public/syllabi.png"
 
 export const name = "Jeronimo Jose Ocampos";
 export const title = "Web Developer";
@@ -196,7 +199,7 @@ export const projects = [
   {
     id: 2,
     title: "Jerocam React Web App",
-    description: "Multiple Restful API proyects",
+    description: "Multiple Restful API projects",
     link: "https://jerocam.github.io/jerocamReact/",
     scode: "https://github.com/Jerocam/jerocamReact",
     image: JoProjects,
@@ -214,7 +217,7 @@ export const projects = [
   {
     id: 3,
     title: "Jerocam Web Shop",
-    description: "First E-Commerce website",
+    description: "My first E-Commerce website",
     link: "https://snipcart2master.gatsbyjs.io/",
     scode: "https://github.com/Jerocam/snipcart2/tree/master",
     image: JoShop,
@@ -222,29 +225,29 @@ export const projects = [
   },
   {
     id: 6,
-    title: "SBG Website",
-    description: "Student Board Goverment of Gallaudet University",
-    link: "https://romantic-blackwell-0723fa.netlify.app/",
-    scode: "https://github.com/Jerocam/sbg-website/tree/master",
-    image: SBG,
-    tech: ["HTML5", "CSS3", "Saas", "jQuery"],
+    title: "My Old Portfolio",
+    description: "It was my first portfolio built in 2020",
+    link: "https://jerocam.github.io/portfolio20/",
+    scode: "https://github.com/Jerocam/portfolio20",
+    image: OldPtf,
+    tech: ["HTML5", "CSS3", "JavaScript", "Photoshop"],
   },
   {
     id: 7,
-    title: "SBG Website",
-    description: "Student Board Goverment of Gallaudet University",
-    link: "https://romantic-blackwell-0723fa.netlify.app/",
-    scode: "https://github.com/Jerocam/sbg-website/tree/master",
-    image: SBG,
-    tech: ["HTML5", "CSS3", "Saas", "jQuery"],
+    title: "VCTL website",
+    description: "A project from my job at Gallaudet",
+    link: "https://www.gallaudetvctl.com/",
+    scode: "",
+    image: Vctl,
+    tech: ["Plasmic", "TypeScript", "Next.js"],
   },
   {
     id: 8,
-    title: "SBG Website",
-    description: "Student Board Goverment of Gallaudet University",
-    link: "https://romantic-blackwell-0723fa.netlify.app/",
-    scode: "https://github.com/Jerocam/sbg-website/tree/master",
-    image: SBG,
-    tech: ["HTML5", "CSS3", "Saas", "jQuery"],
+    title: "Syllabi Websites",
+    description: "I developed 7 syllabi websites for VCTL",
+    link: "https://www.gallaudetvctl.com/leadership-cadre",
+    scode: "",
+    image: Syl,
+    tech: ["Plasmic", "TypeScript", "Next.js"],
   },
 ];

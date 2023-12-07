@@ -47,15 +47,25 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
             <div className="absolute inset-x-0 bottom-0">
               <div className="-mt-px flex divide-x divide-neutral-700 dark:divide-neutral-400 border-t border-neutral-700 dark:border-neutral-400">
                 <div className="flex w-0 flex-1">
-                  <a
-                    href={item.scode}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
-                  >
-                    <IconCode className="text-lg lg:text-xl" />
-                    Source Code
-                  </a>
+                  {item.scode ? (
+                    <a
+                      href={item.scode}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
+                    >
+                      <IconCode className="text-lg lg:text-xl" />
+                      Source Code
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="cursor-not-allowed relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
+                    >
+                      <IconCode className="text-lg lg:text-xl" />
+                      Source Code
+                    </button>
+                  )}
                 </div>
                 <div className="-ml-px flex w-0 flex-1">
                   <a
