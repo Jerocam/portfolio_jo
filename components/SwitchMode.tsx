@@ -19,13 +19,7 @@ export const SwitchMode = () => {
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         {mounted && (
-          <div>
-            {theme === "dark" ? (
-              <IconLight />
-            ) : (
-              <IconDark />
-            )}
-          </div>
+          <div>{theme === "dark" ? <IconLight /> : <IconDark />}</div>
         )}
       </button>
     </>

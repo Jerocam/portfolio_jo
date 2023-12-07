@@ -2,7 +2,6 @@ import {
   IconDeveloper,
   IconProject,
   IconExperience,
-  IconDegree,
   IconGithubBox,
   IconLinkedin,
 } from "../components/Icons";
@@ -17,7 +16,7 @@ import ETI from "../public/eti.png";
 
 export const name = "Jeronimo Jose Ocampos";
 export const title = "Web Developer";
-export const subtitle = "I have been developing websites since 2018."
+export const subtitle = "I have been developing websites since 2018.";
 
 // images
 export const logo = JoLogo;
@@ -54,13 +53,13 @@ export const contact = {
 export const about = () => {
   return (
     <>
-      A web developer who has
-      excellent knowledge of various frameworks and tools for Web Development. I
-      have a passion for coding, web design and graphic design, which makes me a
-      highly-motivated and fast-learner when it comes to things Technology. I
-      strive to build successful websites that are well organized, easy to use
-      and fast to load. Currently, I am seeking a job that will challenge me to
-      improve my skill sets with cutting-edge web development tools.
+      I am web developer with excellent knowledge of various frameworks and
+      tools for Web Development. I have a passion for coding, web design and
+      graphic design, which makes me a highly-motivated and fast-learner when it
+      comes to things Technology. I strive to build successful websites that are
+      well organized, easy to use and fast to load. Currently, I am seeking a
+      job that will challenge me to improve my skill sets with cutting-edge web
+      development tools.
     </>
   );
 };

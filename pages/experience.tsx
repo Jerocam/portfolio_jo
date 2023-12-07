@@ -9,7 +9,10 @@ const Experience: NextPage = () => {
     <ContainerBlock>
       <div className="mt-1 overflow-y-scroll max-h-[40rem]">
         {timeline.map((item: any) => (
-          <div key={item.id} className="relative pl-8 lg:pr-4 sm:pl-[12rem] py-4 lg:py-6 group">
+          <div
+            key={item.id}
+            className="relative pl-8 lg:pr-4 sm:pl-[12rem] py-4 lg:py-6 group"
+          >
             <div className="font-medium text-base sm:text-lg lg:text-xl text-neutral-800 dark:text-neutral-200 mb-1 sm:mb-0">
               {item.target}
             </div>
@@ -17,15 +20,27 @@ const Experience: NextPage = () => {
               <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-[10px] lg:text-xs font-semibold uppercase w-36 h-6 mb-3 sm:mb-0 text-violet-100 bg-violet-800 rounded-full">
                 {item.year}
               </time>
-              <div className="text-xs md:text-sm lg:text-base text-neutral-700 dark:text-neutral-400">{item.place}</div>
+              <div className="text-xs md:text-sm lg:text-base text-neutral-700 dark:text-neutral-400">
+                {item.place}
+              </div>
             </div>
             <div className="mt-2">
-              <p className="text-sm lg:text-base text-neutral-600 dark:text-neutral-300">{item.content}</p>
-              <a target="_blank" className={classNames(!item.href ? "hidden" : "visible", "flex items-center text-sm lg:text-base text-sky-500 dark:text-sky-300 hover:text-sky-600 dark:hover:text-sky-400 transition-all my-2 sm:mb-0")} href={item.href}>
+              <p className="text-sm lg:text-base text-neutral-600 dark:text-neutral-300">
+                {item.content}
+              </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className={classNames(
+                  !item.href ? "hidden" : "visible",
+                  "flex items-center text-sm lg:text-base text-sky-500 dark:text-sky-300 hover:text-sky-600 dark:hover:text-sky-400 transition-all my-2 sm:mb-0"
+                )}
+                href={item.href}
+              >
                 {item.href}
-              <IconOpenNew className="ml-1 text-base lg:text-lg" />
+                <IconOpenNew className="ml-1 text-base lg:text-lg" />
               </a>
-              </div>
+            </div>
             <div className="flex flex-wrap gap-2 mt-4">
               {item.skills.map((item: any, index: number) => (
                 <div key={index}>

@@ -18,7 +18,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
             className="relative h-52 col-span-1 rounded bg-neutral-300 dark:bg-neutral-700 shadow-lg p-2"
           >
             <div className="static flex w-full">
-               <Image
+              <Image
                 className="h-28 md:h-16 lg:h-20 w-auto rounded mr-1"
                 src={item.image}
                 alt="img"
@@ -33,7 +33,6 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                   </p>
                 </div>
               </div>
-             
             </div>
             <div className="flex gap-2 flex-wrap static pt-2 justify-center">
               {item.tech.map((techItem: any, index: number) => (
@@ -51,6 +50,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                   <a
                     href={item.scode}
                     target="_blank"
+                    rel="noreferrer"
                     className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
                   >
                     <IconCode className="text-lg lg:text-xl" />
@@ -61,6 +61,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                   <a
                     href={item.link}
                     target="_blank"
+                    rel="noreferrer"
                     className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-br border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
                   >
                     <IconWeb className="text-lg lg:text-xl" />
