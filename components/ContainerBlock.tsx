@@ -25,7 +25,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
     ...customMeta,
   };
   return (
-    <div className="sm:flex sm:flex-col min-h-screen md:h-screen bg-neutral-50 dark:bg-neutral-800">
+    <div className="sm:flex sm:flex-col min-h-screen lg:h-screen bg-neutral-50 dark:bg-neutral-800">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />

@@ -7,7 +7,7 @@ type GridCardProps = {
 
 export const GridCards: React.FC<GridCardProps> = ({ data }) => {
   return (
-    <div className="overflow-y-auto max-h-[42rem] my-3 sm:my-0">
+    <div className="overflow-y-auto max-h-[42rem] my-3 sm:my-0 sm:mb-1 md:mb-3">
       <ul
         role="list"
         className="grid grid-cols-1 gap-4 lg:gap-5 md:grid-cols-2 xl:grid-cols-3"
