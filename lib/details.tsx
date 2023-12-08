@@ -52,13 +52,7 @@ export const contact = {
 export const about = () => {
   return (
     <>
-      Hey! I am web developer with excellent knowledge of various frameworks and
-      tools for Web Development. I have a passion for coding, web design and
-      graphic design, which makes me a highly-motivated and fast-learner when it
-      comes to things Technology. I strive to build successful websites that are
-      well organized, easy to use and fast to load. Currently, I am seeking a
-      job that will challenge me to improve my skill sets with cutting-edge web
-      development tools.
+      Hey! I am a web developer with extensive knowledge of various frameworks and tools for Web Development. I have a strong passion for coding, web design, and graphic design, making me a highly motivated and fast learner of technology. My goal is to create successful websites that are well-organized, easy to use, and fast to load. At the moment, I am looking for a job that will challenge me to improve my skill set with cutting-edge web development tools.
     </>
   );
 };
