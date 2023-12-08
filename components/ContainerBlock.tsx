@@ -4,6 +4,7 @@ import { IconLocation, IconPhoneMsg, IconMail } from "./Icons";
 import { Header } from "./Header";
 import { name, title, subtitle, contact, infoLinks } from "../lib/details";
 import { NextPages } from "../components/NextPages";
+import PageTransition from "./PageTransition";
 
 type ContainerProps = {
   children?: JSX.Element | JSX.Element[];
@@ -31,11 +32,11 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://yourwebsite.com${router.asPath}`}
+          content={`https://portfolio-jo-jerocam.vercel.app${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://yourwebsite.com${router.asPath}`}
+          href={`https://portfolio-jo-jerocam.vercel.app${router.asPath}`}
         />
       </Head>
       <Header />
@@ -92,7 +93,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
           </div>
         </aside>
         <section className="sm:flex sm:flex-col sm:justify-between sm:w-4/6 p-4 sm:p-0">
-          {children}
+          <PageTransition>{children}</PageTransition>
           <NextPages pathData={router.asPath} />
         </section>
       </main>

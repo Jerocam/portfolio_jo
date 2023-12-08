@@ -52,7 +52,7 @@ export const contact = {
 export const about = () => {
   return (
     <>
-      I am web developer with excellent knowledge of various frameworks and
+      Hey! I am web developer with excellent knowledge of various frameworks and
       tools for Web Development. I have a passion for coding, web design and
       graphic design, which makes me a highly-motivated and fast-learner when it
       comes to things Technology. I strive to build successful websites that are
@@ -82,22 +82,30 @@ export const certificates = [
   {
     id: 1,
     certificate: "Bachelor's degree in Information Technology",
-    href: "",
+    href: "https://gallaudet.edu/information-technology/b-s-in-information-technology/",
+    school: "Gallaudet University",
+    location: "Washington, DC"
   },
   {
     id: 2,
     certificate: "Front End Web Developer I Certificate",
-    href: "",
+    href: "https://sdcce.edu/job-training/digital-media#fewd",
+    school: "San Diego College of Continuing Education",
+    location: "San Diego, California"
   },
   {
     id: 3,
     certificate: "Front End Web Developer II Certificate",
-    href: "",
+    href: "https://sdcce.edu/job-training/digital-media#fewd",
+    school: "San Diego College of Continuing Education",
+    location: "San Diego, California"
   },
   {
     id: 4,
     certificate: "Python programming I Certificate",
-    href: "",
+    href: "https://sdcce.edu/job-training/digital-media#fewd",
+    school: "San Diego College of Continuing Education",
+    location: "San Diego, California"
   },
 ];
 
@@ -163,7 +171,7 @@ export const timeline = [
       "Created and maintained websites for nonprofits or community projects without financial compensation. Helped to improve, fix, and add codes for many projects through developforgood.org and volunteermatch.org",
     href: "",
     place: "Remote, United States",
-    skills: ["HTML5", "Sass", "JavaScript", "PHP", "Bootstrap"],
+    skills: ["HTML5", "CSS3", "Sass", "JavaScript", "PHP", "Bootstrap", "Photoshop"],
   },
   {
     id: 3,
@@ -244,7 +252,7 @@ export const projects = [
   {
     id: 8,
     title: "Syllabi Websites",
-    description: "I developed 7 syllabi websites for VCTL",
+    description: "I developed 7 syllabus websites for VCTL",
     link: "https://www.gallaudetvctl.com/leadership-cadre",
     scode: "",
     image: Syl,

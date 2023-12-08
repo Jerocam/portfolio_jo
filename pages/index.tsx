@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { about, certificates, skills, deliverables } from "../lib/details";
 import { ContainerBlock } from "../components/ContainerBlock";
 import { IconTaskDone, IconCheckBox } from "../components/Icons";
+import DialogOpen from "../components/DialogOpen";
 
 const About: NextPage = () => {
   return (
@@ -25,10 +26,19 @@ const About: NextPage = () => {
             <div className="space-y-4 mt-4 pr-5">
               {certificates.map((item: any) => (
                 <div key={item.id}>
-                  <span className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs lg:text-sm xl:text-base text-yellow-600 dark:text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
+                  <div className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs lg:text-sm xl:text-base text-yellow-600 dark:text-yellow-500 ring-1 ring-inset ring-yellow-400/20">
                     <IconTaskDone className="mr-2 text-lg" />
                     {item.certificate}
-                  </span>
+                    <DialogOpen>
+                      <h2 className="font-semibold text-base lg:text-lg mb-2">
+                        {item.school}
+                      </h2>
+                      <div className="text-sm lg:text-base">
+                        <h3>Website info: {item.href}</h3>
+                        <h3>Location: {item.location}</h3>
+                      </div>
+                    </DialogOpen>
+                  </div>
                 </div>
               ))}
             </div>
