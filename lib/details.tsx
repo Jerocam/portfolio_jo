@@ -202,7 +202,7 @@ export const projects = [
     link: "https://romantic-blackwell-0723fa.netlify.app/",
     scode: "https://github.com/Jerocam/sbg-website/tree/master",
     image: SBG,
-    tech: ["HTML5", "CSS3", "Saas", "jQuery", "JavaScript", "Photoshop"],
+    tech: ["HTML5", "CSS3", "Saas", "jQuery", "JavaScript"],
   },
   {
     id: 2,
@@ -211,7 +211,7 @@ export const projects = [
     link: "https://jerocam.github.io/jerocamReact/",
     scode: "https://github.com/Jerocam/jerocamReact",
     image: JoProjects,
-    tech: ["React", "Bootstrap", "Tailwind CSS", "Photoshop", "RapidAPI"],
+    tech: ["React", "Bootstrap", "Photoshop", "RapidAPI"],
   },
   {
     id: 5,
@@ -220,7 +220,7 @@ export const projects = [
     link: "https://jerocam.github.io/eti-jerocam/",
     scode: "https://github.com/Jerocam/eti-jerocam",
     image: ETI,
-    tech: ["HTML5", "CSS3", "JavaScript", "MDBootstrap", "Photoshop"],
+    tech: ["HTML5", "CSS3", "JavaScript", "MDBootstrap"],
   },
   {
     id: 3,
@@ -229,7 +229,7 @@ export const projects = [
     link: "https://snipcart2master.gatsbyjs.io/",
     scode: "https://github.com/Jerocam/snipcart2/tree/master",
     image: JoShop,
-    tech: ["Gatsby", "Snipcart", "CSS", "JavaScript", "Photoshop"],
+    tech: ["Gatsby", "Snipcart", "JavaScript", "Photoshop"],
   },
   {
     id: 6,

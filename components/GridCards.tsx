@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { IconCode, IconWeb } from "./Icons";
-
+import { IconCode, IconWeb, IconOpenLink } from "./Icons";
 type GridCardProps = {
   data: any;
 };
 
 export const GridCards: React.FC<GridCardProps> = ({ data }) => {
   return (
-    <div className="overflow-y-auto max-h-[42rem] my-3 sm:my-0 sm:mb-1 md:mb-3">
+    <div className="overflow-y-auto h-[40rem] mt-5 sm:mt-0">
       <ul
         role="list"
         className="grid grid-cols-1 gap-4 lg:gap-5 md:grid-cols-2 xl:grid-cols-3"
@@ -15,7 +14,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
         {data.map((item: any) => (
           <li
             key={item.id}
-            className="relative h-56 sm:h-52 col-span-1 rounded bg-neutral-300 dark:bg-neutral-700 shadow-lg p-2"
+            className="relative h-52 sm:h-48 lg:h-44 xl:h-52 2xl:h-44 col-span-1 rounded bg-neutral-300 dark:bg-neutral-700 shadow-lg p-2"
           >
             <div className="static flex w-full">
               <Image
@@ -52,7 +51,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                       href={item.scode}
                       target="_blank"
                       rel="noreferrer"
-                      className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
+                      className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
                     >
                       <IconCode className="text-lg lg:text-xl" />
                       Source Code
@@ -60,7 +59,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                   ) : (
                     <button
                       disabled
-                      className="cursor-not-allowed relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
+                      className="cursor-not-allowed relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-bl border border-transparent py-2 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
                     >
                       <IconCode className="text-lg lg:text-xl" />
                       Source Code
@@ -72,7 +71,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                     href={item.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-br border border-transparent py-2 lg:py-3 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
+                    className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-1 lg:gap-x-3 rounded-br border border-transparent py-2 text-xs lg:text-sm font-semibold text-neutral-900 dark:text-neutral-200 hover:bg-sky-800 hover:text-neutral-200 transition ease-in-out delay-100"
                   >
                     <IconWeb className="text-lg lg:text-xl" />
                     Website
@@ -83,6 +82,17 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
           </li>
         ))}
       </ul>
+      <div className="flex justify-center mt-6">
+        <a
+          className="flex items-center space-x-1 text-neutral-900 dark:text-neutral-200 text-sm xl:text-base transition-all hover:text-sky-600 dark:hover:text-sky-400"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Jerocam?tab=repositories"
+        >
+          <span>Click to see more projects</span>
+          <IconOpenLink />
+        </a>
+      </div>
     </div>
   );
 };

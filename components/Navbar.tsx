@@ -22,19 +22,19 @@ const NavItem: React.FC<NavbarProps> = ({ navdata }) => {
           isActive
             ? "font-semibold text-neutral-800 dark:text-neutral-100"
             : "font-normal text-neutral-700 dark:text-neutral-300",
-          "flex flex-row items-center text-sm md:text-base xl:text-lg hover:text-neutral-900 dark:hover:text-white transition-all"
+          "flex flex-row items-center text-sm lg:text-base 2xl:text-lg hover:text-neutral-900 dark:hover:text-white transition-all"
         )}
       >
-        <navdata.icon className="text-xl md:text-2xl mr-2" />
+        <navdata.icon className="text-xl xl:text-2xl mr-2" />
         {navdata.title}
       </span>
     </Link>
   );
 };
 
-export const Header = () => {
+export const Navbar = () => {
   return (
-    <header className="bg-neutral-300 dark:bg-neutral-900">
+    <div className="bg-neutral-300 dark:bg-neutral-900">
       <Disclosure as="nav">
         {({ open }) => (
           <>
@@ -85,6 +85,6 @@ export const Header = () => {
           </>
         )}
       </Disclosure>
-    </header>
+    </div>
   );
 };
