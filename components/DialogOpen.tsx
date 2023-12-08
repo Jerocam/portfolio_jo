@@ -48,7 +48,7 @@ export default function MyModal({ children }: { children: React.ReactNode }) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-neutral-200 p-4 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md 2xl:max-w-xl transform overflow-hidden rounded bg-neutral-200 p-4 text-left align-middle shadow-xl transition-all">
                   <div className="mt-2 text-black">{children}</div>
 
                   <div className="mt-4 flex justify-end">

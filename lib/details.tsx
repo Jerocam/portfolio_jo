@@ -5,15 +5,15 @@ import {
   IconGithubBox,
   IconLinkedin,
 } from "../components/Icons";
-import JoLogo from "../public/jo_logo.png";
-import SBG from "../public/sbg.png";
-import JoShop from "../public/jo_shop.png";
-import JoProjects from "../public/jerocam_projects.png";
-import JoPizza from "../public/jo_pizza.png";
-import ETI from "../public/eti.png";
-import OldPtf from "../public/oldptf.png";
-import Vctl from "../public/vctl.png";
-import Syl from "../public/syllabi.png"
+import JoLogo from "./assets/jo_logo.png";
+import SBG from "./assets/sbg.png";
+import JoShop from "./assets/jo_shop.png";
+import JoProjects from "./assets/jerocam_projects.png";
+import JoPizza from "./assets/jo_pizza.png";
+import ETI from "./assets/eti.png";
+import OldPtf from "./assets/oldptf.png";
+import Vctl from "./assets/vctl.png";
+import Syl from "./assets/syllabi.png"
 
 export const name = "Jeronimo Jose Ocampos";
 export const title = "Web Developer";
@@ -97,7 +97,7 @@ export const certificates = [
   {
     id: 4,
     certificate: "Python programming I Certificate",
-    href: "https://sdcce.edu/job-training/digital-media#fewd",
+    href: "https://sdcce.edu/job-training/computers/programming-python",
     school: "San Diego College of Continuing Education",
     location: "San Diego, California"
   },

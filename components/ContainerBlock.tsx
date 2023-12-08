@@ -4,7 +4,6 @@ import { IconLocation, IconPhoneMsg, IconMail } from "./Icons";
 import { Navbar } from "./Navbar";
 import { name, title, subtitle, contact, infoLinks } from "../lib/details";
 import { NextPages } from "../components/NextPages";
-import PageTransition from "./PageTransition";
 
 type ContainerProps = {
   children?: JSX.Element | JSX.Element[];
@@ -20,7 +19,6 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
     title: "Jeronimo J. Ocampos - Web Developer",
     description:
       "I've been developing websites for 5 years straight. Get in touch with me to know more.",
-    image: "/avatar.png",
     type: "website",
     ...customMeta,
   };
@@ -94,7 +92,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
             </div>
           </aside>
           <section className=" sm:w-4/6 md:pl-2">
-            <PageTransition>{children}</PageTransition>
+            {children}
             <NextPages pathData={router.asPath} />
           </section>
         </main>
