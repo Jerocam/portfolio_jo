@@ -21,9 +21,9 @@ const About: NextPage = () => {
           ))}
         </div>
         <div className="flex flex-row mt-14 xl:mt-16">
-          <div className="basis-1/2">
+          <div className="basis-1/2 pr-2">
             <h2>Degree / Certifications</h2>
-            <div className="space-y-4 mt-4 pr-5">
+            <div className="space-y-4 mt-4">
               {certificates.map((item: any) => (
                 <div key={item.id}>
                   <div className="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 text-xs lg:text-sm xl:text-base text-yellow-600 dark:text-yellow-500 ring-1 ring-inset ring-yellow-400/20">

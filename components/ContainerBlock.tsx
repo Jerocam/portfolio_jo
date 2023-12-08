@@ -41,7 +41,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
       </Head>
       <Header />
       <main className="container mx-auto h-full sm:flex mt-4 lg:mt-16 p-2">
-        <aside className="pr-2 sm:flex sm:flex-col sm:justify-between w-full sm:w-2/6">
+        <aside className="sm:mr-2 sm:flex sm:flex-col sm:justify-between w-full sm:w-2/6">
           <div className="text-center sm:text-left dark:text-neutral-300 text-neutral-800">
             <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold">
               {name}
@@ -92,7 +92,7 @@ export const ContainerBlock: React.FC<ContainerProps> = ({
               ))}
           </div>
         </aside>
-        <section className="sm:flex sm:flex-col sm:justify-between sm:w-4/6 pl-2">
+        <section className="sm:flex sm:flex-col sm:justify-between sm:w-4/6 md:pl-2">
           <PageTransition>{children}</PageTransition>
           <NextPages pathData={router.asPath} />
         </section>

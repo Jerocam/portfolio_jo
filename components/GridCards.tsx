@@ -7,7 +7,7 @@ type GridCardProps = {
 
 export const GridCards: React.FC<GridCardProps> = ({ data }) => {
   return (
-    <div className="overflow-y-auto max-h-[42rem] mb-2 sm:mb-0">
+    <div className="overflow-y-auto max-h-[42rem] my-3 sm:my-0">
       <ul
         role="list"
         className="grid grid-cols-1 gap-4 lg:gap-5 md:grid-cols-2 xl:grid-cols-3"
@@ -34,7 +34,7 @@ export const GridCards: React.FC<GridCardProps> = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2 flex-wrap static pt-2 justify-center">
+            <div className="flex gap-1 flex-wrap static pt-2 justify-center">
               {item.tech.map((techItem: any, index: number) => (
                 <span
                   key={index}
